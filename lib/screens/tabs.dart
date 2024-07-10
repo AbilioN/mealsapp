@@ -89,7 +89,8 @@ class _TabsScreenState extends State<TabsScreen> {
 
       return true;
     }).toList();
-
+    print(_selectedFilters);
+    print(availableMeals.length);
     Widget activePage = CategoriesScreen(
       onToggleFavorite: _toggleMealFavoriteStatus,
       availableMeals: availableMeals,
